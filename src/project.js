@@ -9,11 +9,10 @@ class Project {
 
     }
     
-   returntask(task){
-    for(Task task : listOfTask){
-        
+    removeTask(taskToRemove){
+        this.listOfTasks = this.listOfTasks.filter(task => task !== taskToRemove);
     }
+
    }
 
     
-}
