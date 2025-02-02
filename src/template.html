@@ -7,7 +7,7 @@
 </head>
 <body>
     <dialog id="taskDialog">
-        <button id="closeBAtn">&times;</button>
+        <button id="closeBtn1">&times;</button>
         <h2>Enter Task Details</h2>
         <form id="task-form">
 
@@ -17,6 +17,9 @@
             <label for="description">Description: </label>
             <input type="text" id="description" class="form-input" required><br>
 
+            <label for="date">Date</label><br>
+            <input type="text" id="date" class="form-input" required><br>
+
             <label for="priority">Priority: </label>
             <input type="number" id="priority" class="form-input" placeholder="the lower the numebr the higher the priority" required><br>
 
@@ -25,6 +28,7 @@
     </dialog>
 
     <dialog id="projectDialog">
+        <button id="closeBtn2">&times;</button>
         <h2>Enter Project Details</h2>
         <form id="project-form">
 
@@ -40,10 +44,10 @@
     
     <header>
         <h1>To Do List</h1>
-        <button>Create Task</button>
+        <button class="task-creator">Create Task</button>
     </header>
     <aside>
-        <button>Create Project</button>
+        <button class="project-creator">Create Project</button>
         <div class="project-container">
 
         </div>

@@ -1,4 +1,4 @@
 import Project from "./project";
 
-const projectContainer = document.getElementsByClassName('project-container');
-const mainContainer = document.getElementsByClassName('main-container');
+export const projectContainer = document.getElementsByClassName('project-container');
+export const mainContainer = document.getElementsByClassName('main-container');
