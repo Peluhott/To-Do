@@ -2,6 +2,13 @@ import { projectContainer } from "./domLoader";
 import { mainContainer } from "./domLoader";
 
 
+
+
+
+
+
+
+
 const taskDial = document.getElementById('taskDialog');
 const openButton1 = document.querySelector('.task-creator');
 const closeButton1 = document.getElementById('closeBtn1');
@@ -22,6 +29,8 @@ userForm1.addEventListener('submit', (event) => {
     const taskDate = document.getElementById('date').value;
     const taskPriority = document.getElementById('priority').value;
     // need to call constructor make task object
+    userForm1.reset();
+    taskDial.close();
 });
 
 const projectDial = document.getElementById('projectDialog');
@@ -42,4 +51,6 @@ userForm2.addEventListener('submit', (event) => {
     const projectName = document.getElementById('projectName').value;
     const projectCategory = document.getElementById('category').value;
     // need to call constructor make project object
+    userForm2.reset();
+    projectDial.close();
 });
