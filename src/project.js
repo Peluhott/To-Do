@@ -1,6 +1,8 @@
 import Task from "./task";
 class Project {
-    constructor(){
+    constructor(name, category){
+        this._name = name;
+        this._category = category;
         this.listOfTasks = [];
     }
 

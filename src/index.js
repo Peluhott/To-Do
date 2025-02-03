@@ -1,5 +1,7 @@
 import { projectContainer } from "./domLoader";
 import { mainContainer } from "./domLoader";
+import Project from "./project";
+import Task from "./task";
 
 
 
@@ -29,6 +31,8 @@ userForm1.addEventListener('submit', (event) => {
     const taskDate = document.getElementById('date').value;
     const taskPriority = document.getElementById('priority').value;
     // need to call constructor make task object
+    const newTask = new Task(taskName, taskDescription, taskDate, taskPriority);
+    // add object to task container
     userForm1.reset();
     taskDial.close();
 });
@@ -51,6 +55,9 @@ userForm2.addEventListener('submit', (event) => {
     const projectName = document.getElementById('projectName').value;
     const projectCategory = document.getElementById('category').value;
     // need to call constructor make project object
+    const newProject = new Project(projectName, projectCategory);
+    // add objects to project container
+
     userForm2.reset();
     projectDial.close();
 });
